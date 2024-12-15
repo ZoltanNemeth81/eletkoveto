@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const activityGoal = document.getElementById("activity-goal").value;
 
         if (!activityType || !activityDescription || !activityGoal) {
-            alert("Kérlek, tölts ki minden mezőt!");
             return;
         }
 
@@ -70,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const mood = document.getElementById("mood").value;
 
         if (!sleepHours || !hydration || !nutrition || !mood) {
-            alert("Kérlek, tölts ki minden mezőt!");
             return;
         }
 
@@ -101,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const interactionDescription = document.getElementById("interaction-description").value;
 
         if (!interactionType || !interactionDescription) {
-            alert("Kérlek, tölts ki minden mezőt!");
             return;
         }
 
