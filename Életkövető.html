@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+
+    <title>Élet Követő</title>
+</head>
+<body>
+    <header>
+        <h1>Élet Követő</h1>
+        <p>Nyomon követheted életed minden területét és fejlődhetsz!</p>
+    </header>
+    <section>
+
+        <!-- Tevékenység -->
+        <div id="activity-tracker" class="Tevekenyseg">
+            <h3>Tevékenységkövetés</h3>
+            <form id="activity-form">
+                <label for="activity-type">Tevékenység típusa:</label>
+                <select id="activity-type" required>
+                    <option value="edzés">Edzés</option>
+                    <option value="munka">Munka</option>
+                    <option value="hobbi">Hobbi</option>
+                </select>
+                <label for="activity-description">Leírás:</label>
+                <input type="text" id="activity-description" placeholder="Pl. Futás, Projekten dolgozás" required>
+                <label for="activity-goal">Cél (pl. idő vagy mennyiség):</label>
+                <input type="text" id="activity-goal" placeholder="Pl. 5 km, 2 óra" required>
+                <button type="submit">Tevékenység hozzáadása</button>
+            </form>
+            
+        </div>
+        
+        <!-- Egészségi Mutatók -->
+        <div id="health-tracker" class="EgeszsegiMutatok">
+            <h3>Egészségi Mutatók</h3>
+            <form id="health-form">
+                <label for="sleep-hours">Alvás (órákban):</label>
+                <input type="number" id="sleep-hours" placeholder="Pl. 7" required>
+                
+                <label for="hydration">Hidratáltság (literekben):</label>
+                <input type="number" id="hydration" placeholder="Pl. 2.5" step="0.1" required>
+                
+                <label for="nutrition">Táplálkozás (leírás):</label>
+                <input type="text" id="nutrition" placeholder="Pl. Egészséges reggeli" required>
+                
+                <label for="mood">Hangulat:</label>
+                <select id="mood" required>
+                    <option value="Nagyon jó">Nagyon jó</option>
+                    <option value="Jó">Jó</option>
+                    <option value="Semleges">Semleges</option>
+                    <option value="Rosszkedvű">Rosszkedvű</option>
+                    <option value="Nagyon rossz">Nagyon rossz</option>
+                </select>
+                
+                <button type="submit">Adatok mentése</button>
+            </form>
+            
+        </div>
+        
+        <!-- Szociális Interakciók  -->
+        <div id="social-interaction-tracker" class="SzocialisInterakcio">
+            <h3>Szociális Interakció</h3>
+            <form id="social-form">
+                <label for="interaction-type">Interakció típusa:</label>
+                <select id="interaction-type" required>
+                    <option value="Találkozó">Találkozó</option>
+                    <option value="Hívás">Hívás</option>
+                    <option value="Üzenet">Üzenet</option>
+                </select>
+                
+                <label for="interaction-description">Interakció leírása:</label>
+                <input type="text" id="interaction-description" placeholder="Pl. Baráti találkozó" required>
+                
+                <button type="submit">Interakció mentése</button>
+            </form>
+        
+            
+        </div>        
+
+        <!-- Személyes Eredmének -->
+        <div class="SzemelyesEredmenyek">
+            <h3>Személyes Eredmények</h3>
+            <ul>
+                <h4>Tevékenységeid:</h4>
+            <ul id="activity-list"></ul>
+                <h4>Egészségi adatok:</h4>
+            <ul id="health-list"></ul>
+                <h4>Szociális interakciók:</h4>
+            <ul id="social-list"></ul>
+            </ul>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>© 2024 Élet Követő | Minden jog fenntartva.</p>
+        <button id="clear-data-btn">Törlés</button>
+    </footer>
+    <script src="java.js" defer></script>
+</body>
+</html>
